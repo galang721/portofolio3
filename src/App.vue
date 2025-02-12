@@ -48,6 +48,19 @@
   </nav>
 </footer>
 </template>
+  <div class="max-w-7xl mx-auto flex flex-col relative">
+  <router-view></router-view>
+</div>
+
+<footer class="block md:hidden fixed bottom-0 left-0 right-0 rounded-t-3xl border border-gray-700">
+  <nav class="flex justify-around py-4 text-xs">
+    <router-link to="/" class="text-gray-300 hover:text-white">Home</router-link>
+    <router-link to="/about" class="text-gray-300 hover:text-white">About</router-link>
+    <router-link to="/portfolio" class="text-gray-300 hover:text-white">Portfolio</router-link>
+    <router-link to="/blog" class="text-gray-300 hover:text-white">Blog</router-link>
+  </nav>
+</footer>
+</template>
 
 <script>
 export default {
